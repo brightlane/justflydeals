@@ -1,1 +1,332 @@
-dfsdfdfdf
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
+<meta name="description" content="Find cheap flights, hotels, and car rentals via JustFly.com. Compare 500+ airlines instantly. Best travel deals 2026.">
+<meta property="og:title" content="Cheap Flights 2026 | JustFly.com — Compare & Book">
+<meta property="og:description" content="Compare 500+ airlines and find the cheapest flights, hotels, and car rentals via JustFly.com.">
+<meta property="og:url" content="https://brightlane.github.io/Justfly/">
+<meta name="twitter:card" content="summary_large_image">
+<title>Cheap Flights 2026 | Compare & Book via JustFly.com</title>
+<link rel="canonical" href="https://brightlane.github.io/Justfly/">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Is JustFly legit?","acceptedAnswer":{"@type":"Answer","text":"Yes. JustFly is a fully accredited, IATA-certified travel booking platform used by millions of travelers worldwide."}},
+{"@type":"Question","name":"Is JustFly cheaper than Expedia?","acceptedAnswer":{"@type":"Answer","text":"JustFly frequently offers lower fares, especially on flight and hotel bundles. It compares 500+ airlines to find the lowest rate."}},
+{"@type":"Question","name":"What is the cheapest day to book flights?","acceptedAnswer":{"@type":"Answer","text":"Tuesday and Wednesday are historically the cheapest days to book. Avoid weekends when prices spike 15-25%."}}
+]}
+</script>
+
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter',sans-serif;background:#f7f8fc;color:#1a1a2e;line-height:1.7;}
+a{text-decoration:none;color:inherit;}
+
+/* NAV */
+nav{background:#0a2463;padding:0 1.5rem;display:flex;align-items:center;justify-content:space-between;height:60px;position:sticky;top:0;z-index:100;}
+.nav-logo{color:#fff;font-weight:800;font-size:1.15rem;display:flex;align-items:center;gap:6px;}
+.nav-logo span{color:#ff6b00;}
+.nav-links{display:flex;gap:1.5rem;}
+.nav-links a{color:rgba(255,255,255,0.75);font-size:0.85rem;font-weight:600;transition:color 0.2s;}
+.nav-links a:hover{color:#fff;}
+.nav-book{background:#ff6b00;color:#fff!important;padding:6px 16px;border-radius:50px;font-weight:700!important;}
+
+/* HERO */
+.hero{background:linear-gradient(135deg,#0a2463 0%,#1a4a8a 60%,#0d3b7a 100%);color:#fff;text-align:center;padding:5rem 1.5rem 4rem;}
+.hero-badge{display:inline-block;background:rgba(255,107,0,0.2);border:1px solid rgba(255,107,0,0.5);color:#ffaa66;padding:5px 16px;border-radius:50px;font-size:0.8rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:1.5rem;}
+.hero h1{font-size:clamp(2rem,5vw,3.5rem);font-weight:800;line-height:1.1;margin-bottom:1rem;}
+.hero h1 em{color:#ff6b00;font-style:normal;}
+.hero p{font-size:1.1rem;color:rgba(255,255,255,0.75);max-width:520px;margin:0 auto 2rem;}
+.btn{display:inline-block;padding:16px 36px;border-radius:8px;font-weight:700;font-size:1rem;transition:transform 0.2s,box-shadow 0.2s;}
+.btn-orange{background:#ff6b00;color:#fff;box-shadow:0 6px 24px rgba(255,107,0,0.4);}
+.btn-orange:hover{transform:translateY(-3px);box-shadow:0 12px 32px rgba(255,107,0,0.5);}
+.btn-ghost{border:2px solid rgba(255,255,255,0.3);color:#fff;margin-left:1rem;}
+.btn-ghost:hover{background:rgba(255,255,255,0.1);}
+.hero-stats{display:flex;justify-content:center;gap:3rem;margin-top:3.5rem;flex-wrap:wrap;}
+.hero-stat-num{font-size:2rem;font-weight:800;}
+.hero-stat-label{font-size:0.75rem;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:0.08em;}
+
+/* URGENCY */
+.urgency{background:#fff3e0;border-top:3px solid #ff6b00;text-align:center;padding:0.75rem 1rem;font-weight:600;font-size:0.95rem;color:#7a3300;}
+#countdown{color:#ff6b00;font-weight:800;}
+.urgency-bar-wrap{height:6px;background:#ffe0b2;margin-top:0.4rem;}
+#urgency-bar{height:100%;background:#ff6b00;transition:width 1s linear;}
+
+/* SECTIONS */
+.section{padding:4rem 1.5rem;}
+.section-alt{background:#fff;}
+.container{max-width:1100px;margin:0 auto;}
+.section-tag{font-size:0.72rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#ff6b00;margin-bottom:0.5rem;}
+.section-title{font-size:clamp(1.5rem,3vw,2.2rem);font-weight:800;color:#0a2463;margin-bottom:0.5rem;}
+.section-sub{color:#666;margin-bottom:2.5rem;max-width:540px;}
+.center{text-align:center;}
+.center .section-sub{margin-left:auto;margin-right:auto;}
+
+/* CARDS */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem;margin-bottom:2rem;}
+.card{background:#fff;border-radius:14px;padding:2rem;box-shadow:0 4px 20px rgba(0,0,0,0.07);border:1px solid #eef0f8;transition:transform 0.25s,box-shadow 0.25s;display:block;}
+.card:hover{transform:translateY(-6px);box-shadow:0 12px 36px rgba(10,36,99,0.12);}
+.card-icon{font-size:2rem;margin-bottom:1rem;}
+.card h3{font-size:1.05rem;font-weight:700;color:#0a2463;margin-bottom:0.5rem;}
+.card p{font-size:0.9rem;color:#555;margin-bottom:1rem;}
+.card-link{font-size:0.85rem;font-weight:700;color:#ff6b00;}
+
+/* DESTINATIONS */
+.dest-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1rem;margin-bottom:2rem;}
+.dest{background:#fff;border-radius:12px;padding:1.2rem;text-align:center;box-shadow:0 4px 16px rgba(0,0,0,0.07);border:1px solid #eef0f8;transition:transform 0.2s;display:block;}
+.dest:hover{transform:translateY(-4px);}
+.dest-emoji{font-size:2rem;margin-bottom:0.4rem;}
+.dest-city{font-weight:700;color:#0a2463;font-size:0.95rem;}
+.dest-price{color:#ff6b00;font-weight:700;font-size:0.85rem;margin-top:0.2rem;}
+
+/* CTA BAND */
+.cta-band{background:linear-gradient(135deg,#0a2463,#1a4a8a);color:#fff;text-align:center;padding:3.5rem 1.5rem;margin:2rem 0;}
+.cta-band h2{font-size:clamp(1.4rem,3vw,2rem);font-weight:800;margin-bottom:0.75rem;}
+.cta-band p{color:rgba(255,255,255,0.75);margin-bottom:2rem;}
+
+/* TIPS */
+.tips{display:grid;gap:1rem;}
+.tip{display:flex;gap:1rem;background:#fff;padding:1.2rem 1.5rem;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.06);border-left:4px solid #0a2463;}
+.tip-n{font-size:1.2rem;font-weight:800;color:#0a2463;min-width:28px;}
+.tip-t strong{display:block;font-size:0.95rem;color:#0a2463;margin-bottom:0.2rem;}
+.tip-t span{font-size:0.87rem;color:#666;}
+
+/* COMPARE */
+.compare-wrap{overflow-x:auto;}
+table{width:100%;border-collapse:collapse;margin:1rem 0 2rem;}
+th,td{padding:0.9rem 1rem;text-align:left;border-bottom:1px solid #eef0f8;font-size:0.9rem;}
+th{background:#f0f4ff;color:#0a2463;font-weight:700;}
+tr:hover td{background:#fafbff;}
+.yes{color:#16a34a;font-weight:700;}
+.no{color:#ccc;}
+.best{background:#ff6b00;color:#fff;font-size:0.65rem;font-weight:700;padding:2px 7px;border-radius:50px;margin-left:5px;vertical-align:middle;}
+
+/* FAQ */
+.faqs{display:grid;gap:1rem;}
+.faq{background:#fff;border-radius:12px;padding:1.4rem 1.6rem;box-shadow:0 2px 12px rgba(0,0,0,0.06);border:1px solid #eef0f8;}
+.faq-q{font-weight:700;color:#0a2463;margin-bottom:0.4rem;}
+.faq-a{font-size:0.9rem;color:#555;}
+
+/* STICKY */
+.sticky{position:fixed;bottom:20px;right:20px;background:#ff6b00;color:#fff;padding:14px 24px;border-radius:8px;font-weight:700;font-size:0.9rem;box-shadow:0 6px 20px rgba(255,107,0,0.45);z-index:999;transition:transform 0.2s;}
+.sticky:hover{transform:scale(1.05);}
+
+/* FOOTER */
+footer{background:#0a2463;color:rgba(255,255,255,0.6);text-align:center;padding:1.5rem;font-size:0.82rem;}
+footer a{color:rgba(255,255,255,0.5);}
+footer a:hover{color:#fff;}
+
+.disclosure{font-size:0.78rem;color:#999;text-align:center;padding:1rem;border-top:1px solid #eee;}
+
+/* FADE */
+.fade{opacity:0;transform:translateY(20px);transition:opacity 0.6s ease,transform 0.6s ease;}
+.fade.on{opacity:1;transform:none;}
+
+@media(max-width:768px){
+  .nav-links{display:none;}
+  .hero-stats{gap:1.5rem;}
+  .btn-ghost{display:none;}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">✈ Flight<span>Deals</span>Pro</div>
+  <div class="nav-links">
+    <a href="#flights">Flights</a>
+    <a href="#destinations">Destinations</a>
+    <a href="#tips">Tips</a>
+    <a href="#compare">Compare</a>
+    <a href="#faq">FAQ</a>
+    <a href="https://track.rqqft.com/aff_c?offer_id=25631&aff_id=21885" class="nav-book">Book Now ✈</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-badge">✈ Powered by JustFly.com</div>
+  <h1>Find <em>Cheap Flights</em><br>Before Anyone Else</h1>
+  <p>Compare 500+ airlines instantly. The lowest fares on flights, hotels, and car rentals — all in one place.</p>
+  <a href="https://track.rqqft.com/aff_c?offer_id=25631&aff_id=21885" class="btn btn-orange">🔍 Search Cheap Flights Now</a>
+  <a href="#flights" class="btn btn-ghost">Learn More</a>
+  <div class="hero-stats">
+    <div><div class="hero-stat-num">500+</div><div class="hero-stat-label">Airlines</div></div>
+    <div><div class="hero-stat-num">$73</div><div class="hero-stat-label">Avg. Savings</div></div>
+    <div><div class="hero-stat-num">4.9★</div><div class="hero-stat-label">Rating</div></div>
+    <div><div class="hero-stat-num">24/7</div><div class="hero-stat-label">Live Fares</div></div>
+  </div>
+</section>
+
+<div class="urgency">
+  ⏰ Limited fares — offer ends in: <span id="countdown">Loading...</span>
+  <div class="urgency-bar-wrap"><div id="urgency-bar" style="width:100%;"></div></div>
+</div>
+
+<!-- FLIGHTS -->
+<section class="section section-alt" id="flights">
+  <div class="container">
+    <div class="section-tag">What We Cover</div>
+    <h2 class="section-title">Flights, Hotels &amp; Car Rentals</h2>
+    <p class="section-sub">Everything for your trip — searched and compared in one place.</p>
+    <div class="cards fade">
+      <a href="https://track.rqqft.com/aff_c?offer_id=25631&aff_id=21885" class="card">
+        <div class="card-icon">✈️</div>
+        <h3>Cheap Flights</h3>
+        <p>Compare fares from 500+ airlines. One-way, round-trip, or multi-city — find the cheapest route instantly.</p>
+        <span class="card-link">Search Flights →</span>
+      </a>
+      <a href="https://track.rqqft.com/aff_c?offer_id=25631&aff_id=21885" class="card">
+        <div class="card-icon">🏨</div>
+        <h3>Hotel Deals</h3>
+        <p>Bundle your hotel with your flight and save up to 40%. Exclusive rates not available elsewhere.</p>
+        <span class="card-link">Find Hotels →</span>
+      </a>
+      <a href="https://track.rqqft.com/aff_c?offer_id=25631&aff_id=21885" class="card">
+        <div class="card-icon">🚗</div>
+        <h3>Car Rentals</h3>
+        <p>Add a rental car in seconds. Compare all major companies at your destination for the best rate.</p>
+        <span class="card-link">Rent a Car →</span>
+      </a>
+      <a href="https://track.rqqft.com/aff_c?offer_id=25631&aff_id=21885" class="card">
+        <div class="card-icon">🔔</div>
+        <h3>Price Alerts</h3>
+        <p>Set a fare alert and get notified the instant prices drop on any route. Never overpay again.</p>
+        <span class="card-link">Set Alert →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- DESTINATIONS -->
+<section class="section" id="destinations">
+  <div class="container center">
+    <div class="section-tag">Top Routes 2026</div>
+    <h2 class="section-title">Popular Destinations &amp; Live Fares</h2>
+    <p class="section-sub">Hot routes updated daily. Click any city to see live prices.</p>
+    <div class="dest-grid fade">
+      <a href="https://track.rqqft.com/aff_c?offer_id=25631&aff_id=21885" class="dest"><div class="dest-emoji">🗽</div><div class="dest-city">New York</div><div class="dest-price">From $89</div></a>
+      <a href="https://track.rqqft.com/aff_c?offer_id=25631&aff_id=21885" class="dest"><div class="dest-emoji">🏰</div><div class="dest-city">London</div><div class="dest-price">From $299</div></a>
+      <a href="https://track.rqqft.com/aff_c?offer_id=25631&aff_id=21885" class="dest"><div class="dest-emoji">🗼</div><div class="dest-city">Paris</div><div class="dest-price">From $319</div></a>
+      <a href="https://track.rqqft.com/aff_c?offer_id=25631&aff_id=21885" class="dest"><div class="dest-emoji">🌸</div><div class="dest-city">Tokyo</div><div class="dest-price">From $549</div></a>
+      <a href="https://track.rqqft.com/aff_c?offer_id=25631&aff_id=21885" class="dest"><div class="dest-emoji">🏖</div><div class="dest-city">Cancún</div><div class="dest-price">From $149</div></a>
+      <a href="https://track.rqqft.com/aff_c?offer_id=25631&aff_id=21885" class="dest"><div class="dest-emoji">🌴</div><div class="dest-city">Miami</div><div class="dest-price">From $99</div></a>
+      <a href="https://track.rqqft.com/aff_c?offer_id=25631&aff_id=21885" class="dest"><div class="dest-emoji">🎰</div><div class="dest-city">Las Vegas</div><div class="dest-price">From $79</div></a>
+      <a href="https://track.rqqft.com/aff_c?offer_id=25631&aff_id=21885" class="dest"><div class="dest-emoji">🌉</div><div class="dest-city">San Francisco</div><div class="dest-price">From $119</div></a>
+    </div>
+    <a href="https://track.rqqft.com/aff_c?offer_id=25631&aff_id=21885" class="btn btn-orange">✈ Search All Destinations</a>
+  </div>
+</section>
+
+<div class="cta-band fade">
+  <div class="container">
+    <h2>Prices Drop Daily — Don't Miss Out</h2>
+    <p>Fares on top routes change every hour. Lock in the lowest price right now.</p>
+    <a href="https://track.rqqft.com/aff_c?offer_id=25631&aff_id=21885" class="btn btn-orange" style="font-size:1.1rem;padding:18px 40px;">✈ Find My Cheap Flight on JustFly</a>
+  </div>
+</div>
+
+<!-- TIPS -->
+<section class="section section-alt" id="tips">
+  <div class="container">
+    <div class="section-tag">Expert Advice</div>
+    <h2 class="section-title">10 Tips to Find the Cheapest Flights</h2>
+    <p class="section-sub">Strategies used by frequent flyers to cut airfare by 30–60%.</p>
+    <div class="tips fade">
+      <div class="tip"><div class="tip-n">01</div><div class="tip-t"><strong>Book on Tuesday or Wednesday</strong><span>Airfare is cheapest mid-week. Avoid Friday–Sunday when prices spike 15–25%.</span></div></div>
+      <div class="tip"><div class="tip-n">02</div><div class="tip-t"><strong>Fly early morning or late night</strong><span>Off-peak departures are 20–30% cheaper with lower cancellation rates.</span></div></div>
+      <div class="tip"><div class="tip-n">03</div><div class="tip-t"><strong>Be flexible with dates</strong><span>Shifting your trip by 1–3 days can save $100–$400, especially around holidays.</span></div></div>
+      <div class="tip"><div class="tip-n">04</div><div class="tip-t"><strong>Book domestic 6–8 weeks out</strong><span>The sweet spot for US flights. Too early or too late costs more.</span></div></div>
+      <div class="tip"><div class="tip-n">05</div><div class="tip-t"><strong>Book international 3–6 months out</strong><span>For transatlantic and transpacific routes, book well in advance for best fares.</span></div></div>
+      <div class="tip"><div class="tip-n">06</div><div class="tip-t"><strong>Try nearby airports</strong><span>A secondary airport 60–90 minutes away can cut your fare by up to 40%.</span></div></div>
+      <div class="tip"><div class="tip-n">07</div><div class="tip-t"><strong>Set fare alerts on JustFly</strong><span>Get notified the instant prices drop on your route. Never miss a deal.</span></div></div>
+      <div class="tip"><div class="tip-n">08</div><div class="tip-t"><strong>Search in incognito mode</strong><span>Airlines track repeat searches and raise prices. Always use a private window.</span></div></div>
+      <div class="tip"><div class="tip-n">09</div><div class="tip-t"><strong>Bundle flight + hotel</strong><span>Booking together saves 15–40% over booking separately. Always check bundle pricing.</span></div></div>
+      <div class="tip"><div class="tip-n">10</div><div class="tip-t"><strong>Consider a one-stop flight</strong><span>A connecting flight often costs 30–50% less than nonstop. Usually worth it.</span></div></div>
+    </div>
+    <div style="text-align:center;margin-top:2rem;">
+      <a href="https://track.rqqft.com/aff_c?offer_id=25631&aff_id=21885" class="btn btn-orange">✈ Search JustFly with These Tips</a>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARE -->
+<section class="section" id="compare">
+  <div class="container">
+    <div class="section-tag">Platform Comparison</div>
+    <h2 class="section-title">JustFly vs Expedia vs Kayak vs Google Flights</h2>
+    <p class="section-sub">Unbiased feature-by-feature comparison.</p>
+    <div class="compare-wrap fade">
+      <table>
+        <tr><th>Feature</th><th>JustFly <span class="best">BEST</span></th><th>Expedia</th><th>Kayak</th><th>Google Flights</th></tr>
+        <tr><td>Flight + Hotel Bundles</td><td><span class="yes">✔</span></td><td><span class="yes">✔</span></td><td><span class="no">—</span></td><td><span class="no">—</span></td></tr>
+        <tr><td>Car Rental Bundling</td><td><span class="yes">✔</span></td><td><span class="yes">✔</span></td><td><span class="no">—</span></td><td><span class="no">—</span></td></tr>
+        <tr><td>500+ Airlines</td><td><span class="yes">✔</span></td><td><span class="no">—</span></td><td><span class="yes">✔</span></td><td><span class="yes">✔</span></td></tr>
+        <tr><td>Price Alerts</td><td><span class="yes">✔</span></td><td><span class="yes">✔</span></td><td><span class="yes">✔</span></td><td><span class="yes">✔</span></td></tr>
+        <tr><td>Flexible Date Search</td><td><span class="yes">✔</span></td><td>Partial</td><td><span class="yes">✔</span></td><td><span class="yes">✔</span></td></tr>
+        <tr><td>Multi-City Booking</td><td><span class="yes">✔</span></td><td><span class="yes">✔</span></td><td>Partial</td><td><span class="yes">✔</span></td></tr>
+        <tr><td>Starting Price</td><td><strong style="color:#ff6b00;">Lowest</strong></td><td>Mid</td><td>Mid</td><td>Variable</td></tr>
+      </table>
+    </div>
+    <div style="text-align:center;">
+      <a href="https://track.rqqft.com/aff_c?offer_id=25631&aff_id=21885" class="btn btn-orange">✈ Book on JustFly — Best Value</a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section section-alt" id="faq">
+  <div class="container">
+    <div class="section-tag">FAQ</div>
+    <h2 class="section-title">Frequently Asked Questions</h2>
+    <div class="faqs fade">
+      <div class="faq"><div class="faq-q">Is JustFly legit?</div><div class="faq-a">Yes. JustFly is a fully accredited, IATA-certified booking platform used by millions of travelers. It partners with 500+ airlines and has a long track record of successful bookings.</div></div>
+      <div class="faq"><div class="faq-q">Is JustFly cheaper than Expedia?</div><div class="faq-a">JustFly frequently offers lower fares, especially on flight + hotel bundles. It compares hundreds of airlines simultaneously to surface the lowest available rate.</div></div>
+      <div class="faq"><div class="faq-q">What is the cheapest day to book flights?</div><div class="faq-a">Tuesday and Wednesday are historically the cheapest days to purchase flights. Avoid booking on weekends when prices are typically 15–25% higher.</div></div>
+      <div class="faq"><div class="faq-q">Can I cancel a JustFly booking?</div><div class="faq-a">Cancellation policies vary by airline and fare type. Many fares include a 24-hour free cancellation window. Always check fare rules before completing your booking.</div></div>
+      <div class="faq"><div class="faq-q">Does JustFly compare all airlines?</div><div class="faq-a">JustFly compares fares from 500+ airlines including all major carriers and many budget airlines. It is one of the most comprehensive flight search tools available.</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="disclosure">
+  This site contains affiliate links. We earn a commission when you book through our links at no extra cost to you. | aff_id=21885
+</div>
+
+<footer>
+  <p>© 2026 FlightDealsPro | Powered by JustFly.com</p>
+  <p style="margin-top:0.4rem;"><a href="#">About</a> &nbsp;|&nbsp; <a href="#">Contact</a> &nbsp;|&nbsp; <a href="#">Disclosure</a></p>
+</footer>
+
+<a href="https://track.rqqft.com/aff_c?offer_id=25631&aff_id=21885" class="sticky">✈ Book Now on JustFly</a>
+
+<script>
+// COUNTDOWN
+const el = document.getElementById('countdown');
+const bar = document.getElementById('urgency-bar');
+const total = 6*60*60*1000;
+const end = Date.now() + total;
+function tick(){
+  const d = end - Date.now();
+  if(d<=0){el.textContent='Expired';bar.style.width='0%';return;}
+  const h=Math.floor(d/3600000),m=Math.floor((d%3600000)/60000),s=Math.floor((d%60000)/1000);
+  el.textContent=h+'h '+m+'m '+s+'s';
+  const pct=(d/total)*100;
+  bar.style.width=pct+'%';
+  bar.style.background=pct>66?'#22c55e':pct>33?'#f59e0b':'#ef4444';
+}
+tick(); setInterval(tick,1000);
+
+// FADE IN
+const faders=document.querySelectorAll('.fade');
+function check(){faders.forEach(el=>{if(el.getBoundingClientRect().top<window.innerHeight-60)el.classList.add('on');});}
+window.addEventListener('scroll',check);
+window.addEventListener('load',check);
+</script>
+
+</body>
+</html>
