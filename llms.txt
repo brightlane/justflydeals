@@ -1,0 +1,9 @@
+# FlightDealsPro — JustFly USA Affiliate
+> Updated: 2026-05-29
+> Affiliate links present
+
+## About
+20,000+ page USA affiliate site for JustFly.com flight booking.
+Covers all 50 states, 120 US city pairs, international routes, and 200 long-tail flight keywords.
+
+## Site: https://brightlane.github.io/justflydeals/

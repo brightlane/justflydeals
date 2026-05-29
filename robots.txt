@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /build.py
+Disallow: /.github/
+Sitemap: https://brightlane.github.io/justflydeals/sitemap.xml
