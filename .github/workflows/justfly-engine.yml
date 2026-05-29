@@ -1,0 +1,32 @@
+name: JustFly Build Engine
+on:
+  schedule:
+    - cron: "0 1 * * *"   # daily 1 AM UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Configure Git
+        run: |
+          git config user.name "auto-bot"
+          git config user.email "auto-bot@users.noreply.github.com"
+
+      - name: Run Build
+        run: python3 build.py
